@@ -43,3 +43,4 @@ def above_threshold(lst, threshold):
     return output
 
 print(above_threshold([8,2,13,11,4,10,14], 10))
+print(above_threshold([], 0))
