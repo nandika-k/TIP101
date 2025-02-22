@@ -22,14 +22,24 @@ EDGE CASE
 Ask interviewer about these edge cases...
 - Non-int items won't be passed.
 - Is the list sorted? No
+- Include duplicates in final list? 
 """
 
 """
 PLAN:
 Make a new list that I'll return
 Use while or for loop to iterate through input lst
-Use a conditional to check whether 
+    Use a conditional to check whether current item is > than threshold
+    Add current item to new list
+Return list
 """
 
 def above_threshold(lst, threshold):
-    pass
+    output = []
+
+    for num in lst:
+        if num > threshold:
+            output.append(num)
+    return output
+
+print(above_threshold([8,2,13,11,4,10,14], 10))
