@@ -12,7 +12,7 @@ def calculate_gpa(report_card):
         elif grade == 'D':
             total +=1
     
-    return (.2f"{total/len(report_card)}")
+    return (f"{total/len(report_card)}")
 
 report_card = {"Math": "A", "Science": "C", "History": "A", "Art": "B", "English": "B", "Spanish": "A"}
 print(calculate_gpa(report_card))
