@@ -19,11 +19,18 @@ Return the dictionary
 def count_by_category(items):
     cat_count = {}
     for pair in items:
+    #for category, _item in items: also works. _var isa python convention that 
+    # indicates that i have to put data in here, but im not using it
         category = pair[0]
         if cat_count.get(category, None) != None:
             cat_count[category] += 1
         else:
             cat_count[category] = 1
+        '''
+        if category not in cat_count:
+            cat_count[category] = 0
+        cat_count[category] += 1
+        '''
     return cat_count
 
 # input
