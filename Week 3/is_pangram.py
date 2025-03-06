@@ -9,6 +9,9 @@ def is_pangram(my_str):
             return False
     return True
 
+def is_pangram_v2(my_str):
+    
+
 my_str = "The quick brown fox jumps over the lazy dog"
 print(is_pangram(my_str))
 
