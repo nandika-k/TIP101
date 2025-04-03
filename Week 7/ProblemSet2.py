@@ -81,7 +81,7 @@ def binary_search_iterative(arr, target):
 	right = len(arr) - 1
 	mid = (left + right) // 2
 
-	while left < right:
+	while left =< right:
 		if (target == arr[mid]):
 			return mid
 		elif target < arr[mid]:
