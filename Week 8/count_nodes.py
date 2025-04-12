@@ -39,11 +39,11 @@ def print_list(head):
         print(curr.value)
         curr = curr.next
 
-five = Node(5)
-four = Node(4, five)
+five = Node(3)
+four = Node(3, five)
 three = Node(3, four)
-two = Node(2, three)
-one = Node(1, two)
+two = Node(3, three)
+one = Node(3, two)
 zero = Node(3, one)
 
-print_list(del_nodes(zero,2))
+print_list(del_nodes(None,3))
