@@ -72,3 +72,14 @@ print(sum_path(None, 0, 22))
 # target_sum = 1
 # Output: True
 
+#Other problem and groupmate's code
+def invert(root):
+    if root is None:
+        return
+    
+    root.left, root.right = root.right, root.left
+
+    invert(root.left)
+    invert(root.right)
+
+    return root
